@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Delivery</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link "><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link "><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link "><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link "><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link active"><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link "><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Delivery</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Delivery Management</h2><p>Track delivery partners and active deliveries.</p></div><button class="btn btn-primary">+ Add Delivery Partner</button></div>
+<div class="stats">
+<div class="stat-card"><div><p class="label">ACTIVE DELIVERIES</p><h3>18</h3></div><div class="stat-icon">🚚</div></div>
+<div class="stat-card"><div><p class="label">AVAILABLE PARTNERS</p><h3>26</h3></div><div class="stat-icon">🛵</div></div>
+<div class="stat-card"><div><p class="label">DELIVERED TODAY</p><h3>126</h3></div><div class="stat-icon">✅</div></div>
+<div class="stat-card"><div><p class="label">AVG. DELIVERY</p><h3>29 min</h3></div><div class="stat-icon">⏱️</div></div>
+</div>
+<div class="panel"><div class="panel-head"><h3>Delivery Partners</h3></div><div class="table-wrap"><table><thead><tr><th>Partner</th><th>Phone</th><th>Active Orders</th><th>Rating</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td><strong>Vijay Kumar</strong></td><td>98765 11111</td><td>2</td><td>★ 4.9</td><td><span class="status success">Online</span></td><td><button class="btn btn-light btn-small">View</button></td></tr>
+<tr><td><strong>Rakesh Patel</strong></td><td>98765 22222</td><td>1</td><td>★ 4.8</td><td><span class="status success">Online</span></td><td><button class="btn btn-light btn-small">View</button></td></tr>
+<tr><td><strong>Manish Shah</strong></td><td>98765 33333</td><td>0</td><td>★ 4.7</td><td><span class="status pending">Offline</span></td><td><button class="btn btn-light btn-small">View</button></td></tr>
+</tbody></table></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

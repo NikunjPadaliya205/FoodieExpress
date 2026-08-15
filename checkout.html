@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress - Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav-content">
+        <a href="index.html" class="logo">Foodie<span>Express</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="offers.html">Offers</a>
+            <a href="orders.html">Orders</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-btn">🛒 Cart <span>3</span></a>
+            <a href="login.html" class="login-btn">Login / Sign Up</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="checkout-hero">
+    <div class="container">
+        <p class="hero-label">FOODIEEXPRESS</p>
+        <h1>Checkout</h1>
+        <p>Complete your details and place your food order.</p>
+    </div>
+</section>
+
+<section class="checkout-section">
+    <div class="container checkout-layout">
+
+        <div class="checkout-left">
+
+            <div class="checkout-card">
+                <div class="card-heading">
+                    <div class="step-number">1</div>
+                    <div>
+                        <p class="section-label">DELIVERY DETAILS</p>
+                        <h2>Delivery Address</h2>
+                    </div>
+                </div>
+
+                <form class="address-form">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" rows="3" placeholder="House no., Building, Street, Area"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" placeholder="Enter pincode">
+                        </div>
+                    </div>
+
+                    <div class="address-type">
+                        <label>Address Type</label>
+
+                        <div class="address-options">
+                            <label class="address-option">
+                                <input type="radio" name="address-type" checked>
+                                <span>🏠 Home</span>
+                            </label>
+
+                            <label class="address-option">
+                                <input type="radio" name="address-type">
+                                <span>💼 Work</span>
+                            </label>
+
+                            <label class="address-option">
+                                <input type="radio" name="address-type">
+                                <span>📍 Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="checkout-card">
+                <div class="card-heading">
+                    <div class="step-number">2</div>
+                    <div>
+                        <p class="section-label">PAYMENT</p>
+                        <h2>Choose Payment Method</h2>
+                    </div>
+                </div>
+
+                <div class="payment-options">
+
+                    <label class="payment-option selected">
+                        <input type="radio" name="payment" checked>
+                        <div class="payment-icon">💵</div>
+                        <div class="payment-info">
+                            <h3>Cash on Delivery</h3>
+                            <p>Pay when your order arrives.</p>
+                        </div>
+                        <span class="check">✓</span>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment">
+                        <div class="payment-icon">💳</div>
+                        <div class="payment-info">
+                            <h3>Credit / Debit Card</h3>
+                            <p>Pay securely using your card.</p>
+                        </div>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment">
+                        <div class="payment-icon">📱</div>
+                        <div class="payment-info">
+                            <h3>UPI</h3>
+                            <p>Pay using Google Pay, PhonePe or Paytm.</p>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="checkout-card">
+                <div class="card-heading">
+                    <div class="step-number">3</div>
+                    <div>
+                        <p class="section-label">ORDER NOTE</p>
+                        <h2>Additional Instructions</h2>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Delivery Instructions</label>
+                    <textarea id="note" rows="3" placeholder="Example: Please leave the order at the door."></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <aside class="checkout-right">
+
+            <div class="summary-card">
+                <p class="section-label">YOUR ORDER</p>
+                <h2>Order Summary</h2>
+
+                <div class="summary-restaurant">
+                    <span>🍕</span>
+                    <div>
+                        <h3>Pizza House</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+
+                <div class="summary-item">
+                    <div>
+                        <span>1 × Margherita Pizza</span>
+                    </div>
+                    <strong>₹299</strong>
+                </div>
+
+                <div class="summary-item">
+                    <div>
+                        <span>1 × Classic Burger</span>
+                    </div>
+                    <strong>₹199</strong>
+                </div>
+
+                <div class="summary-item">
+                    <div>
+                        <span>1 × Chicken Fried Rice</span>
+                    </div>
+                    <strong>₹249</strong>
+                </div>
+
+                <div class="bill-details">
+                    <div>
+                        <span>Item Total</span>
+                        <strong>₹747</strong>
+                    </div>
+
+                    <div>
+                        <span>Delivery Fee</span>
+                        <strong>₹40</strong>
+                    </div>
+
+                    <div class="discount">
+                        <span>Discount</span>
+                        <strong>-₹100</strong>
+                    </div>
+
+                    <div>
+                        <span>Taxes & Charges</span>
+                        <strong>₹35</strong>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <span>To Pay</span>
+                    <strong>₹722</strong>
+                </div>
+
+                <button class="place-order-btn">
+                    Place Order →
+                </button>
+
+                <p class="secure">🔒 Your payment information is secure.</p>
+            </div>
+
+            <div class="delivery-time">
+                <span>🚚</span>
+                <div>
+                    <h3>Estimated Delivery</h3>
+                    <p>25 - 35 minutes</p>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <span>💬</span>
+                <div>
+                    <h3>Need Help?</h3>
+                    <p>Our support team is ready to help.</p>
+                    <a href="#">Contact Support →</a>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+            <a href="index.html" class="logo">Foodie<span>Express</span></a>
+            <p>
+                Delicious food from your favorite restaurants,
+                delivered quickly to your doorstep.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="offers.html">Offers</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Customer</h3>
+            <a href="orders.html">My Orders</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="cart.html">Cart</a>
+            <a href="track-order.html">Track Order</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Admin</h3>
+            <a href="admin/admin-login.html">Admin Login</a>
+            <a href="admin/dashboard.html">Dashboard</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FoodieExpress. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

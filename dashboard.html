@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Dashboard</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link active"><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link "><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link "><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link "><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link "><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link "><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Dashboard</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Dashboard Overview</h2><p>Welcome back, Admin. Here is today's summary.</p></div><a class="btn btn-primary" href="orders.html">View Orders →</a></div>
+<div class="stats">
+<div class="stat-card"><div><p class="label">TOTAL ORDERS</p><h3>248</h3><p class="change">↑ 12% this month</p></div><div class="stat-icon">🛍️</div></div>
+<div class="stat-card"><div><p class="label">CUSTOMERS</p><h3>1,240</h3><p class="change">↑ 8% this month</p></div><div class="stat-icon">👥</div></div>
+<div class="stat-card"><div><p class="label">RESTAURANTS</p><h3>108</h3><p class="change">↑ 5 new this month</p></div><div class="stat-icon">🏪</div></div>
+<div class="stat-card"><div><p class="label">TOTAL REVENUE</p><h3>₹85,450</h3><p class="change">↑ 15% this month</p></div><div class="stat-icon">💰</div></div>
+</div>
+<div class="grid-2">
+<div class="panel"><div class="panel-head"><h3>Revenue Overview</h3><select><option>Last 7 Days</option><option>Last 30 Days</option></select></div><div class="panel-body"><div class="chart"><div class="bar" style="height:48%"><span>Mon</span></div><div class="bar" style="height:68%"><span>Tue</span></div><div class="bar" style="height:55%"><span>Wed</span></div><div class="bar active" style="height:88%"><span>Thu</span></div><div class="bar" style="height:72%"><span>Fri</span></div><div class="bar" style="height:95%"><span>Sat</span></div><div class="bar" style="height:80%"><span>Sun</span></div></div></div></div>
+<div class="panel"><div class="panel-head"><h3>Order Status</h3></div><div class="panel-body"><div class="quick-grid"><div class="quick"><span>🆕</span><b>New</b><small>12 orders</small></div><div class="quick"><span>👨‍🍳</span><b>Preparing</b><small>24 orders</small></div><div class="quick"><span>🚚</span><b>Delivery</b><small>18 orders</small></div><div class="quick"><span>✅</span><b>Completed</b><small>194 orders</small></div></div></div></div>
+</div>
+<div class="panel"><div class="panel-head"><h3>Recent Orders</h3><a href="orders.html">View All →</a></div><div class="table-wrap"><table><thead><tr><th>Order ID</th><th>Customer</th><th>Restaurant</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead><tbody>
+<tr><td><strong>#FE1024</strong></td><td>Rahul Patel</td><td>Spice Garden</td><td>₹450</td><td><span class="status success">Delivered</span></td><td>15 Aug 2026</td></tr>
+<tr><td><strong>#FE1025</strong></td><td>Priya Shah</td><td>Urban Bites</td><td>₹720</td><td><span class="status pending">Preparing</span></td><td>15 Aug 2026</td></tr>
+<tr><td><strong>#FE1026</strong></td><td>Amit Mehta</td><td>The Food Hub</td><td>₹350</td><td><span class="status info">Out for Delivery</span></td><td>15 Aug 2026</td></tr>
+<tr><td><strong>#FE1027</strong></td><td>Neha Joshi</td><td>Pizza Corner</td><td>₹599</td><td><span class="status pending">Pending</span></td><td>15 Aug 2026</td></tr>
+</tbody></table></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

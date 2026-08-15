@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Restaurants</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link "><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link active"><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link "><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link "><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link "><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link "><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Restaurants</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Restaurant Management</h2><p>Manage restaurants listed on FoodieExpress.</p></div><button class="btn btn-primary">+ Add Restaurant</button></div>
+<div class="restaurant-cards">
+<div class="item-card"><div class="item-image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85" loading="lazy" referrerpolicy="no-referrer"></div><div class="item-info"><h3>Spice Garden</h3><p>Indian • Chinese • Fast Food</p><div class="card-row"><span>★ 4.8</span><span class="status success">Active</span></div></div></div>
+<div class="item-card"><div class="item-image"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85" loading="lazy" referrerpolicy="no-referrer"></div><div class="item-info"><h3>Urban Bites</h3><p>Burgers • Pizza • Snacks</p><div class="card-row"><span>★ 4.7</span><span class="status success">Active</span></div></div></div>
+<div class="item-card"><div class="item-image"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=85" loading="lazy" referrerpolicy="no-referrer"></div><div class="item-info"><h3>The Food Hub</h3><p>Gujarati • Punjabi • South Indian</p><div class="card-row"><span>★ 4.6</span><span class="status pending">Review</span></div></div></div>
+</div>
+<div class="panel" style="margin-top:22px"><div class="panel-head"><h3>Restaurant List</h3><a href="#">Export</a></div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Category</th><th>Rating</th><th>Delivery</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td><strong>Spice Garden</strong></td><td>Indian, Chinese</td><td>★ 4.8</td><td>20–30 min</td><td><span class="status success">Active</span></td><td><button class="btn btn-light btn-small">Edit</button></td></tr>
+<tr><td><strong>Urban Bites</strong></td><td>Burgers, Pizza</td><td>★ 4.7</td><td>25–35 min</td><td><span class="status success">Active</span></td><td><button class="btn btn-light btn-small">Edit</button></td></tr>
+<tr><td><strong>The Food Hub</strong></td><td>Gujarati, Punjabi</td><td>★ 4.6</td><td>30–40 min</td><td><span class="status pending">Review</span></td><td><button class="btn btn-light btn-small">Edit</button></td></tr>
+</tbody></table></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

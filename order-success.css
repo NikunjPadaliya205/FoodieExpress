@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: #ff5a36;
+    font-size: 25px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #222;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5a36;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-btn {
+    background: #fff3ef;
+    color: #ff5a36;
+    padding: 9px 14px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cart-btn span {
+    background: #ff5a36;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+.login-btn {
+    background: #ff5a36;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #e94b2c;
+}
+
+/* Success Section */
+
+.success-section {
+    padding: 60px 0 80px;
+}
+
+.success-card {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 45px;
+    text-align: center;
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9f8ef;
+    color: #16883d;
+    border: 5px solid #d4f0de;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.success-label,
+.small-label {
+    color: #ff5a36;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.success-card h1 {
+    font-size: 34px;
+    line-height: 1.25;
+    margin: 8px 0 10px;
+}
+
+.success-text {
+    max-width: 520px;
+    margin: auto;
+    color: #777;
+    font-size: 14px;
+}
+
+.order-id {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px auto;
+    padding: 9px 15px;
+    background: #f8f9fb;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.order-id span {
+    color: #777;
+    font-size: 11px;
+}
+
+.order-id strong {
+    color: #222;
+    font-size: 12px;
+}
+
+/* Delivery Info */
+
+.delivery-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    padding: 15px;
+    background: #fffaf8;
+    border: 1px solid #ffe0d7;
+    border-radius: 9px;
+}
+
+.info-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff5a36;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.info-box p {
+    color: #888;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.info-box h3 {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* Restaurant */
+
+.restaurant-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-align: left;
+    margin-top: 20px;
+    padding: 16px;
+    background: #f8f9fb;
+    border-radius: 9px;
+}
+
+.restaurant-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3ef;
+    border-radius: 9px;
+    font-size: 23px;
+}
+
+.restaurant-info h3 {
+    font-size: 15px;
+}
+
+.restaurant-info p:last-child {
+    color: #777;
+    font-size: 11px;
+}
+
+/* Progress */
+
+.order-progress {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 9px;
+    text-align: left;
+}
+
+.progress-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.progress-title h2 {
+    font-size: 18px;
+}
+
+.progress-title span {
+    color: #ff5a36;
+    background: #fff3ef;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.progress-line {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.progress-line::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #ddd;
+    z-index: 0;
+}
+
+.progress-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.step-circle {
+    width: 31px;
+    height: 31px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    color: #aaa;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.progress-step p {
+    color: #888;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+.progress-step.completed .step-circle,
+.progress-step.active .step-circle {
+    background: #ff5a36;
+    border-color: #ff5a36;
+    color: #fff;
+}
+
+.progress-step.completed p,
+.progress-step.active p {
+    color: #222;
+    font-weight: 700;
+}
+
+/* Buttons */
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.primary-btn {
+    background: #ff5a36;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #e94b2c;
+}
+
+.secondary-btn {
+    background: #fff;
+    color: #ff5a36;
+    border: 1px solid #ff5a36;
+}
+
+.secondary-btn:hover {
+    background: #fff3ef;
+}
+
+/* Help */
+
+.help-box {
+    max-width: 850px;
+    margin: 18px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+.help-box > span {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3ef;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.help-box h3 {
+    font-size: 14px;
+}
+
+.help-box p {
+    color: #777;
+    font-size: 10px;
+}
+
+.help-box a {
+    margin-left: auto;
+    color: #ff5a36;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-about .logo {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-about .logo span {
+    color: #fff;
+}
+
+.footer-about p {
+    max-width: 320px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.footer-links a {
+    color: #aaa;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff5a36;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3a3a3a;
+    text-align: center;
+    padding: 18px;
+    color: #999;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .nav-content {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 92%;
+    }
+
+    .nav-content {
+        justify-content: center;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+    }
+
+    .success-section {
+        padding: 40px 0 55px;
+    }
+
+    .success-card {
+        padding: 28px 18px;
+    }
+
+    .success-card h1 {
+        font-size: 27px;
+    }
+
+    .delivery-info {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-line {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .progress-line::before {
+        top: 15px;
+        bottom: 15px;
+        left: 15px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .progress-step {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .progress-step .step-circle {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .progress-step p {
+        margin: 0;
+    }
+
+    .success-actions {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .help-box {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .help-box a {
+        width: 100%;
+        margin-left: 55px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

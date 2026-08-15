@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Settings</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link "><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link "><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link "><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link "><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link "><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link active"><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Settings</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Admin Settings</h2><p>Manage admin profile and website settings.</p></div></div>
+<div class="panel"><div class="panel-head"><h3>Admin Profile</h3></div><div class="panel-body">
+<div class="form-grid">
+<div class="form-group"><label>Admin Name</label><input class="form-control" value="FoodieExpress Admin"></div>
+<div class="form-group"><label>Email Address</label><input class="form-control" type="email" value="admin@foodieexpress.com"></div>
+<div class="form-group"><label>Phone Number</label><input class="form-control" value="+91 98765 43210"></div>
+<div class="form-group"><label>Role</label><select class="form-control"><option>Administrator</option><option>Manager</option></select></div>
+<div class="form-group"><label>New Password</label><input class="form-control" type="password" placeholder="Enter new password"></div>
+<div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" placeholder="Confirm new password"></div>
+</div>
+<div class="form-actions"><button class="btn btn-light">Cancel</button><button class="btn btn-primary">Save Changes</button></div>
+</div></div>
+<div class="panel"><div class="panel-head"><h3>Website Settings</h3></div><div class="panel-body"><div class="form-grid">
+<div class="form-group"><label>Website Name</label><input class="form-control" value="FoodieExpress"></div>
+<div class="form-group"><label>Support Email</label><input class="form-control" value="support@foodieexpress.com"></div>
+<div class="form-group full"><label>Website Description</label><textarea class="form-control">Delicious food from your favorite restaurants, delivered quickly to your doorstep.</textarea></div>
+</div><div class="form-actions"><button class="btn btn-primary">Save Website Settings</button></div></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Offers</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link "><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link "><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link active"><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link "><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link "><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link "><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Offers</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Offers & Coupons</h2><p>Create and monitor promotional offers.</p></div><button class="btn btn-primary">+ Create Offer</button></div>
+<div class="grid-3">
+<div class="panel"><div class="panel-body"><p class="login-label">ACTIVE OFFER</p><h2>WELCOME30</h2><p class="muted">30% OFF on first order</p><br><span class="status success">Active</span></div></div>
+<div class="panel"><div class="panel-body"><p class="login-label">ACTIVE OFFER</p><h2>FOOD20</h2><p class="muted">20% OFF on selected food</p><br><span class="status success">Active</span></div></div>
+<div class="panel"><div class="panel-body"><p class="login-label">EXPIRED</p><h2>SAVE50</h2><p class="muted">₹50 OFF above ₹499</p><br><span class="status danger">Expired</span></div></div>
+</div>
+<div class="panel"><div class="panel-head"><h3>Coupon List</h3></div><div class="table-wrap"><table><thead><tr><th>Code</th><th>Discount</th><th>Minimum Order</th><th>Valid Until</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td><strong>WELCOME30</strong></td><td>30%</td><td>₹299</td><td>31 Aug 2026</td><td><span class="status success">Active</span></td><td><button class="btn btn-light btn-small">Edit</button></td></tr>
+<tr><td><strong>FOOD20</strong></td><td>20%</td><td>₹499</td><td>25 Aug 2026</td><td><span class="status success">Active</span></td><td><button class="btn btn-light btn-small">Edit</button></td></tr>
+</tbody></table></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>

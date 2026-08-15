@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FoodieExpress Admin - Payments</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-layout">
+<aside class="sidebar">
+<div class="sidebar-logo"><a href="../index.html"><span>Foodie</span>Express</a></div>
+<div class="admin-profile"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div>
+<nav class="sidebar-nav">
+<p class="nav-title">MAIN MENU</p>
+<a href="dashboard.html" class="nav-link "><span class="nav-icon">📊</span>Dashboard</a>
+<a href="orders.html" class="nav-link "><span class="nav-icon">🛍️</span>Orders<b>12</b></a>
+<a href="restaurants.html" class="nav-link "><span class="nav-icon">🏪</span>Restaurants</a>
+<a href="menu.html" class="nav-link "><span class="nav-icon">🍽️</span>Menu Items</a>
+<a href="customers.html" class="nav-link "><span class="nav-icon">👥</span>Customers</a>
+<a href="offers.html" class="nav-link "><span class="nav-icon">🏷️</span>Offers</a>
+<a href="payments.html" class="nav-link active"><span class="nav-icon">💳</span>Payments</a>
+<a href="reviews.html" class="nav-link "><span class="nav-icon">⭐</span>Reviews</a>
+<a href="delivery.html" class="nav-link "><span class="nav-icon">🚚</span>Delivery</a>
+<a href="settings.html" class="nav-link "><span class="nav-icon">⚙️</span>Settings</a>
+</nav>
+<div class="sidebar-bottom">
+<a href="../index.html" class="bottom-link view-site">🌐 View Website</a>
+<a href="admin-login.html" class="bottom-link logout">↪ Logout</a>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div class="topbar-left"><button class="menu-toggle">☰</button><div><p class="welcome">ADMIN PANEL</p><h1>Payments</h1></div></div>
+<div class="topbar-right"><button class="notification">🔔<b>3</b></button><div class="top-admin"><div class="avatar">👨🏻‍💼</div><div><h3>Admin</h3><p>Administrator</p></div></div></div>
+</header>
+<section class="content">
+
+<div class="page-title"><div><h2>Payment Management</h2><p>Monitor online payments and transaction status.</p></div></div>
+<div class="stats">
+<div class="stat-card"><div><p class="label">TOTAL PAYMENTS</p><h3>₹85,450</h3></div><div class="stat-icon">💳</div></div>
+<div class="stat-card"><div><p class="label">SUCCESSFUL</p><h3>₹79,210</h3></div><div class="stat-icon">✅</div></div>
+<div class="stat-card"><div><p class="label">PENDING</p><h3>₹4,240</h3></div><div class="stat-icon">⏳</div></div>
+<div class="stat-card"><div><p class="label">REFUNDED</p><h3>₹2,000</h3></div><div class="stat-icon">↩️</div></div>
+</div>
+<div class="panel"><div class="panel-head"><h3>Transactions</h3></div><div class="table-wrap"><table><thead><tr><th>Payment ID</th><th>Order ID</th><th>Customer</th><th>Method</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead><tbody>
+<tr><td><strong>PAY84501</strong></td><td>#FE1024</td><td>Rahul Patel</td><td>UPI</td><td>₹450</td><td><span class="status success">Success</span></td><td>15 Aug</td></tr>
+<tr><td><strong>PAY84502</strong></td><td>#FE1025</td><td>Priya Shah</td><td>Card</td><td>₹720</td><td><span class="status success">Success</span></td><td>15 Aug</td></tr>
+<tr><td><strong>PAY84503</strong></td><td>#FE1027</td><td>Neha Joshi</td><td>UPI</td><td>₹599</td><td><span class="status pending">Pending</span></td><td>15 Aug</td></tr>
+</tbody></table></div></div>
+
+</section>
+</main>
+</div>
+</body>
+</html>
